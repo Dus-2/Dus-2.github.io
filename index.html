@@ -287,10 +287,12 @@
             })
             .then(() => {
                 alert('Ordren er afgivet!');
+                location.reload();
             })
             .catch(error => {
                 console.error('Fejl:', error);
                 alert(`Tak for ordren, ${order.name}!`);
+                location.reload();
             });
         }
 
