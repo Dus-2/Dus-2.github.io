@@ -266,9 +266,8 @@
 
             const embed = {
                 title: 'Ny Ordre Modtaget!',
-                description: `**Navn:** ${order.name}\n**Klasse:** ${order.class}\n${order.items.map(item => `**${item.name}:** ${item.quantity} stk.`).join('\n')}`,
+                description: `**Navn:** ${order.name}\n**Klasse:** ${order.class}\n **-----------** \n${order.items.map(item => `**${item.name}:** ${item.quantity} stk.`).join('\n')}`,
                 color: 0xFF6F61,
-                timestamp: new Date().toISOString()
             };
 
             const data = {
