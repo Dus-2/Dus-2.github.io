@@ -227,7 +227,7 @@
 
         function submitOrder(event) {
             event.preventDefault();
-            const blockedNames = ["putin", "hitler", "heil", "fuck", "dick", "mr green", "mr dick", "mrgreen", "mrdick", "green", "yellow"];
+            const blockedNames = ["putin", "hitler", "heil", "fuck", "dick", "mr green", "mr dick", "mrgreen", "mrdick", "green", "yellow", "sigma"];
             const name = document.getElementById('customerName').value.trim().toLowerCase();
             const selectedClass = document.getElementById('classSelect').value;
 
@@ -266,7 +266,7 @@
 
             const embed = {
                 title: 'Ny Ordre Modtaget!',
-                description: `**Navn:** ${order.name}\n**Klasse:** ${order.class}\n **-----------** \n${order.items.map(item => `**${item.name}:** ${item.quantity} stk.`).join('\n')}`,
+                description: `**Navn:** ${order.name}\n**Klasse:** ${order.class}\n **-----------** \n${order.items.map(item => `**${item.name}:** ${item.quantity} stk.`).join('\n')} \n \n \n Lavet af Markus!`,
                 color: 0xFF6F61,
             };
 
